@@ -1,0 +1,306 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:content-box;
+}
+
+.message{
+  color: white;
+
+}
+/* Apply a background image to the body */
+body {
+  background-image: url('https://sanbs.org.za/wp-content/uploads/2023/09/LOW-BLOODSTOCKS_Collateral_2023-v2_SEP-04_HOMEPAGE-1400x800.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+
+.search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: white;
+    top: 10; 
+    size: 75%;
+}
+
+.search input {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: white;
+    top: 10; 
+    size: 100%;   
+}
+
+.btn-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5%;
+    border: blue;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.navbar {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+  background-image: url('https://e1.pxfuel.com/desktop-wallpaper/85/445/desktop-wallpaper-best-blood-donation-quotes-quotesgram-blood-bank.jpg');
+  color: whitesmoke;
+  position:fixed;
+  right: 0;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  padding-bottom: 0%;
+  margin-bottom: 0;
+  
+}
+
+
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.jumbotron {
+  
+  color: #000;
+
+}
+
+/* Style the jumbotron */
+.jumbotron1 {
+  
+  color: #000;
+  background-color: red;
+  background: transparent(rgba(255, 255, 255, 0.2));
+}
+
+.h1title {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(250, 248, 248);
+  padding-right:60%;
+  margin-left: 0;
+  padding-bottom: 10px;
+
+}
+/* Style the headings */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(250, 248, 248);
+  padding-right:60%;
+  margin-left: 0;
+  padding-bottom: 180px;
+
+}
+
+/* Style the paragraph */
+p {
+  font-size: 18px;
+  color: white;
+}
+
+/* Style the list */
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: red;
+  color: rgb(251, 249, 249);
+  text-align: center;
+ 
+  width: 80%;
+}
+
+/* Style the footer links */
+.footer-copyright a {
+  color: rgb(249, 245, 245);
+  text-decoration: none;
+}
+
+/* Center the footer text */
+.text-center {
+  text-align: center;
+  margin-top:30px;
+}
+
+/* Add some margin at the bottom of the jumbotron */
+
+.container {
+  
+  width: 100%;
+  text-align: center;
+  background-size:cover;
+  padding-right: 0%;
+  margin-right: 0;
+  margin-left: 10%;
+  padding-bottom:200px;
+}
+
+.container1 {
+  background: transparent(rgb(238, 147, 147));
+  width: 80%;
+  text-align: center;
+  background-size:cover;
+  padding-right: 0%;
+  margin-right: 0;
+  margin-left: 10%;
+  padding-bottom:50px;
+}
+
+.navbar-brand {
+  color: white;
+  text-decoration: none; /* Remove underlines from links */
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  top: 5;
+  right: 0;
+  padding: 5%;
+ 
+}
+
+.nav-item {
+  display: inline; /* Make list items appear inline */
+  margin-right: 20px; /* Add space between items */
+}
+
+.nav-link {
+  color: rgb(248, 245, 245);
+  text-decoration: none; 
+  background-color: rgb(245, 7, 7);
+  
+  border-radius: 60%;
+  padding:25px 25px 25px 25px; 
+  font-style: italic;
+  font: bold;
+  font-size: 40px;
+  border-color: rgb(234, 13, 13);
+  margin-top: 0;
+  text-align: center;
+
+}
+.nav-link:hover{
+  color: white;
+  background-color: rgb(255, 0, 0);
+  font-size: 43px;
+  transition: 0.2s;
+}
+.list{
+  padding-left:50px;
+}
+.text-md-left {
+  text-align: left!important;
+}
+.mb-3{
+  text-align:right!important;
+}
+.col-md-3 mb-md-0 mb-3{
+  text-align:centre;
+}
+
+.btn-don{
+  background-color: white;
+  color: red;
+  border-radius: 40%;
+  padding:100px 75px 75px 75px; 
+  font-style: italic;
+  font: bold;
+  font-size: 25px;
+  border-color: white;
+  text-decoration: none; 
+  margin-left: 300px;
+  margin-bottom: 0;
+}
+.btn-don:hover{
+  color: white;
+  background-color: rgb(255, 0, 0);
+  font-size: 30px;
+  transition: 0.5s;
+
+}
+/* Reset default margin and padding for all elements */
+
+
+
+
+/* Style the navigation bar */
+
+.navbar-brand {
+  color: white;
+  text-decoration: none; /* Remove underlines from links */
+}
+
+.navbar-nav {
+  list-style: none;
+}  
+.Developed{
+  margin-top: 0%;
+   margin-left: 300px;
+}
+ .text {
+  margin-right: 25%;
+ }
+img {
+  width: 25%;
+  height: 5%;
+  
+  position: relative;
+  margin-right: 25%;
+}
+.email{
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.container{
+  margin-bottom: 0;
+}
+.logo{
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 150px;
+  border-radius: 30%;
+  height: 100px;
+}
+.raththam{
+  width: 80%;
+  height: fit-content;
+}

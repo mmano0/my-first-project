@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Blood Bank Monitoring</title>
+  <link rel="stylesheet" href="static/indexnew.css">
+  <link rel="stylesheet" href="static/New.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      overflow: auto;
+    }
+
+    body {
+      background-color: rgb(247, 7, 7); /* Fix typo: bule to blue */
+    }
+
+    /* Add .navbar style */
+    .navbar {
+      background-color: #f6f1f1;
+      padding: 10px;
+      color: rgb(250, 5, 5);
+      text-align: center;
+    }
+
+    .navbar a {
+      color: rgb(252, 5, 5);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .hero {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(banner1.jpg);
+      background-position: center;
+      background-size: cover;
+      position: static;
+      overflow: hidden;
+    }
+
+    .form-box {
+      background: linear-gradient(rgba(244, 243, 242, 0.7), rgb(253, 252, 252)); /* Fix typo: blur to linear-gradient */
+      width: 380px;
+      height: 500px;
+      position: relative;
+      margin: 6% auto;
+      border-radius: 30px;
+      border: ridge;
+      background: rgb(250, 245, 245);
+      padding: 5px;
+      color: white;
+      overflow: hidden;
+      padding-right: -3px;
+      text-overflow: clip;
+      overflow-y: scroll;
+    }
+
+    /* Fix typo: h1 to .h1 */
+    .h1, h1 {
+      margin-bottom: 3.5rem;
+      margin-top: 3.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+      font-size: 48px;
+      margin-left: 0;
+      margin-right: 30px;
+      padding-bottom: 0px;
+      font-style: normal;
+      font-weight: 400;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    /* Add .navbar-brand style */
+    .navbar-brand {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .button-box {
+      width: 220px;
+      margin: 35px auto;
+      position: relative;
+      box-shadow: 0 0 20px 9px #ff61241f;
+      border-radius: 30px;
+    }
+
+    /* Add .toggle-btn style */
+    .toggle-btn {
+      padding: 10px 30px;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      outline: none;
+      position: relative;
+    }
+
+    #btn {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 110px;
+      height: 100%;
+      background: linear-gradient(to right, #ff105f, #ffad06);
+      border-radius: 30px;
+      transition: .5s;
+    }
+
+    .input-group {
+      top: 180px;
+      position: absolute;
+      width: 280px;
+      transition: .5s;
+    }
+
+    /* Fix typo: feild to field */
+    .input-field {
+      width: 100%;
+      padding: 10px 0;
+      margin: 5px 0;
+      border-left: 0;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 1px solid #999;
+      outline: none;
+      background: white;
+    }
+
+    /* Fix typo: sumbit to submit */
+    .submit-btn {
+      width: 85%;
+      padding: 10px 30px;
+      cursor: pointer;
+      display: block;
+      margin: auto;
+      background: linear-gradient(to right, #ff105f, #ffad06);
+      border: 0;
+      outline: none;
+      border-radius: 30px;
+    }
+
+    /* Fix typo: chech-box to check-box */
+    .check-box {
+      margin: 30px 10px 30px 0;
+    }
+
+    /* Add .footer style */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer small {
+      display: block;
+      margin-top: 10px;
+    }
+
+    /* Hide scrollbar */
+    .form-box::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="#">Blood Bank Monitoring</a>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/contact">Contact us</a>
+      <a class="nav-link" href="/register">Register</a>
+      <a class="nav-link" href="/login">Login</a>
+    </ul>
+  </div>
+</nav>
+
+<div class="form-box">
+  <div class="button-box">
+    <div id="btn"></div>
+    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+    <button type="button" class="toggle-btn" onclick="register()">Admin In</button>
+  </div>
+
+  <form id="login" action="/login" method="POST" class="input-group">
+    <input type="text" name="email" class="input-field" placeholder="User Id" required>
+    <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
+    <input type="checkbox" class="check-box"><span>Remember Password</span>
+    <button type="submit" class="submit-btn">Log in</button>
+  </form>
+
+  <div id="scroll">
+    <form id="login2" action="/admin_login" method="POST" class="input-group" style="overflow: hidden">
+      <input type="text" name="email" class="input-field" placeholder="User Id" required>
+      <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
+      <input type="checkbox" class="check-box"><span>Remember Password</span>
+      <button type="submit" class="submit-btn">Log in</button>
+    </form>
+  </div>
+</div>
+
+<!-- Add a footer section -->
+<footer class="footer">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <h5 class="text-uppercase">Developed by</h5>
+        <small>M.MANO & S. SUBASH & J.NITHISH KUMAR</small>
+        <br>
+        <small>Register No: 22800072 & 22800078 & 22800096</small>
+        <br>
+        <small>Department of Computer Application (MCA)</small>
+      </div>
+
+      <div class="col-md-3 mb-md-0 mb-3">
+        <a href="/">Home</a>
+        <a href="/">Search</a>
+        <a href="#!">About</a>
+        <a href="/contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-center py-3">© 2024 Copyright:
+    <a href="#"> MCA</a>
+  </div>
+</footer>
+
+<script>
+  var x = document.getElementById("login");
+  var y = document.getElementById("login2");
+  var z = document.getElementById("btn");
+
+  function register() {
+    x.style.left = "-300px";
+    y.style.left = "70px";
+    z.style.left = "110px";
+  }
+
+  function login() {
+    x.style.left = "70px";
+    y.style.left = "450px";
+    z.style.left = "0px";
+  }
+</script>
+</body>
+</html>

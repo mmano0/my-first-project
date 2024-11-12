@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blood Bank Monitoring</title>
+    <link rel="stylesheet" href="static/indexnew.css">
+    <link rel="stylesheet" href="static/New.css">
+     <style>
+      .form-box{
+        background:red;
+        color: white;
+      }
+      h2{
+        padding-left: 50%;
+      }
+      button{
+        margin-left: 50%;
+      }
+     </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      
+      <div class="search">
+        <label for="">Blood Bank Monitoring</label>
+    </div>
+      <div class="navbar-nav">
+        <a class="nav-link" href="/home1">Home</a>
+        <a class="nav-link" href="/contact">Contact us</a>
+        
+        <a class="nav-link" href="/about">About Us</a>
+        <a class="nav-link" href="/logout">LogOut</a>
+      </div>
+     
+    </nav>
+    <h2>Donor Form</h2>
+<div class="form-box">
+<form class="form2"   method="POST">
+    <div class="king-form">
+        <div class="input-grp">
+           <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+         </div>
+         <div class="input-grp">
+               <label for="dob">Date of Birth:</label>
+              <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="input-grp">
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" name="age" required>
+            </div>    
+            <div class="input-grp">
+                  <label class="choose">Choose Blood Group:</label>
+                  
+                  <select id="department" name="bloodGroup" required>
+                   <option>Select</option>
+                      <option id="bloodGroupA" name="bloodGroup" value="A">A</option>
+                      <option id="bloodGroupA" name="bloodGroup" value="B">B</option>
+                      <option id="bloodGroupAB" name="bloodGroup" value="AB">AB</option>
+                      <option id="bloodGroupO" name="bloodGroup" value="O">O</option>
+                      </select>
+               
+              
+            </div>
+            <label for="bloodGroupPositive">+ <input type="radio" id="bloodGroupPositive" name="rhFactor" value="positive"> </label>
+               
+              <label for="bloodGroupNegative">-<input type="radio" id="bloodGroupNegative" name="rhFactor" value="negative"></label> 
+            <div class="input-grp">
+              <label for="mobileNumber">Mobile Number:</label>
+                 <input type="tel" id="mobileNumber"  maxlength="10" minlength="1" name="mobileNumber" required>
+            </div>
+            <div class="input-grp">
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-grp">     
+                      <label>Have you donated in the last 40 days?</label>
+                      <input type="radio" id="yesDonated" name="donationStatus" value="yes" required>
+                      <label for="yesDonated">Yes</label>
+                      <input type="radio" id="noDonated" name="donationStatus" value="no" required>
+                      <label for="noDonated">No</label>
+            </div>
+            <div class="input-grp">
+                      <label>In the last six months, have you had any of the following?</label>
+                      <input type="checkbox" id="activities" name="activities[]" value="tattooing">
+                      <label for="tattooing">Tattooing</label>
+
+                      <input type="checkbox" id="activities" name="activities[]" value="piercing">
+                      <label for="piercing">Piercing</label>
+
+                        <input type="checkbox" id="activities" name="activities[]" value="dentalExtraction">
+                       <label for="dentalExtraction">Dental Extraction</label>
+                       <input type="checkbox" id="activities  z" name="activities[]" value="None">
+                       <label for="None">None</label>
+                      <br>  
+            </div>
+            <div class="input-grp">
+                     <input class="btn btn-primary flight" href="/" type="submit" value="Submit">
+            </div>        
+    </div>
+</form>
+</div>
+  
+  <!-- Footer -->
+<footer class="py-4 bg-dark text-white-50">
+  <!-- Footer Links -->
+  <div class="container-fluid ">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+        <!-- Content -->
+        <h5 class="text-uppercase">Developed by</h5>
+        <small>M.MANO & S.SUBASH & J.NITHISH KUMAR</small>
+        <br>
+        <small>Register No: 22800072 & 22800078 & 22800096</small>
+        <br>
+        <small>Department of Computer Application( MCA )</small>
+      </div>
+     
+      <!-- Grid column -->
+      <!-- Grid column -->
+     
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2024 Copyright:
+    <a href="#"> MC22756-MC22756</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+  </body>
+</html>

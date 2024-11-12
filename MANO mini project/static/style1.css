@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* Body Styles */
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #932007;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+/* Form Styles */
+.container {
+  margin-top: 20px;
+}
+
+.jumbotron {
+  background-color: #f7f7f7;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #932007;
+  color: #fff;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-copyright {
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin: 10px 0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .jumbotron {
+    padding: 20px;
+  }
+  
+  footer {
+    position: relative;
+  }
+}

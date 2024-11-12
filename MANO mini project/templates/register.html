@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blood Bank Monitoring</title>
+  
+    <link rel="stylesheet" href="static/indexnew.css">
+    <link rel="stylesheet" href="static/New.css">
+    <style>
+      input{
+        color:black;
+      }
+      option{
+        color:black;
+      }
+      .form-box{
+        background-color: rgb(250, 6, 6);
+        color: rgb(251, 249, 249);
+      }
+      h1{
+       padding-left: 50%;
+       color: red;
+      }
+      button{
+        width: 100px;
+        height: 50px;
+        border-radius: 50%;
+        color: rgb(250, 10, 10);
+        font-size: medium;
+        font-style: italic;
+      }
+
+    </style>
+  </head>
+  <body>
+  <nav class="navbar">
+  <a class="navbar-brand" >Blood Bank Monitoring</a>
+
+  <div class="collapse " id="navbarsExampleDefault">
+    <ul class="navbar-nav ">
+      
+       <a class="nav-link" href="/">Home</a>
+       <a class="nav-link" href="/contact">Contact us</a>
+    
+       <a class="nav-link" href="/register">Register</a>
+       <a class="nav-link" href="/login">Login</a>
+    </ul>   
+</div>
+</nav>
+<div class="container">
+
+    
+  <h1>Register</h1>
+  <div class="form-box">
+        <form class="form2" action="" method="POST">
+          <div class="king-form">
+           
+            <div class="input-grp">
+                    <label for="Name">Name :</label>
+                    <input style="color:black;" id="name" maxlength="25" minlength="1" name="name" required type="text" value="">
+                </div>
+                <div class="input-grp">
+                    <label for="donor_id">Donor ID :</label>
+                    <input  id="donor_id" maxlength="25" minlength="1" name="donor_id" required type="Number" value="">
+                </div>
+                <div class="input-grp">    
+                    <label >Blood Group :</label>
+                    <select id="blood_group" name="blood_group" required>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                 </div>
+                 <div class="input-grp">
+                    <label for="address">Address :</label>
+                    <input  id="address" maxlength="25" minlength="1" name="address" required
+                           type="text" value="">
+                 </div>    
+                 <div class="input-grp">    
+                    <label for="city">City :</label>
+                    <input id="city" maxlength="25" minlength="1" name="city" required
+                           type="text" value="">
+                 </div>
+                 <div class="input-grp">          
+                    <label for="contact_number">Contact Number :</label>
+                    <input id="contact_number" maxlength="10" minlength="1"
+                           name="contact_number" required type="text" value=""> 
+                 </div>     
+                 <div class="input-grp">                 
+                
+                    <label for="email">Email:</label>
+                    <input  id="email" maxlength="50" minlength="10" name="email" required
+                           type="text" value="">
+                 </div>
+                 <div class="input-grp">
+                    <label for="password">Password:</label>
+                    <input id="password" name="password" required type="password" value="">
+                 </div>
+                 <div class="input-grp">
+                    <label for="cpassword">Confirm Password :</label>
+                    <input  id="cpassword" name="cpassword" type="password" value="">
+                     
+                 </div>
+                          
+                      
+                    
+           </div>  
+           <button  href="/login">Register</button>    
+            
+        </form>
+      </div>   
+</div>
+</div>
+<footer class="py-4 bg-dark text-white-50">
+  <!-- Footer Links -->
+  <div class="container-fluid ">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+        <!-- Content -->
+        <h5 class="text-uppercase">Developed by</h5>
+        <small>M.MANO & S.SUBASH & J.NITHISH KUMAR</small>
+        <br>
+        <small>Register No: 22800072 & 22800078 & 22800096</small>
+        <br>
+        <small>Department of Computer Application( MCA )</small>
+      </div>
+     
+      <!-- Grid column -->
+      <!-- Grid column -->
+     
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2024 Copyright:
+    <a href="#"> MC22756-MC22756</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+  </body>
+</html>

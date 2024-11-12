@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Donors List</title>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="static/0012.css">
+<link rel="stylesheet" href="static/style.css">
+<body>
+    <nav class="navbar " >
+        <a class="navbar-brand">Blood Bank Monitoring</a>
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/contact">Contact us</a>
+            <a class="nav-link" href="/notifications">Notification</a>
+            <a class="nav-link" href="/">LogOut</a>
+      </nav>
+    <div class="jumbotron">
+        <h3>Donors List</h3>
+        {% with messages = get_flashed_messages() %}
+ {% if messages %}
+  <ul>
+  {% for message in messages %}
+    <li>{{ message }}</li>
+  {% endfor %}
+  </ul>
+ {% endif %}
+{% endwith %}
+
+ <h3>email:{{session['email']}}</h3>
+ <h4><a href="/dashboard1">Dashboard is here!!!</h4>
+    </div>
+    <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br>
+      <!-- Footer -->
+<footer class="py-4 bg-dark text-white-50">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase">Developed by</h5>
+          <small>M.MANO & SUBASH & J.NITHISH KUMAR</small>
+          <br>
+          <small>Register No: 22800072 & 22800078 & 22800096</small>
+          <br>
+          <small>Department of Computer Application( MCA )</small>
+        </div>
+        <!-- Grid column -->
+        
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+         
+              <a class="ho" href="/">Home</a>
+           
+              <a class="se"href="/">Search</a>
+          
+              <a class="ab" href="#!">About</a>
+           
+              <a class="co" href="/contact">Contact Us</a>
+           
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2024 Copyright:
+      <a href="#"> MCA</a>
+    </div>
+    <!-- Copyright -->
+    <script>
+      $(document).ready(function(){
+      
+        $(".alert").hide(3000)
+      });
+    </script> 
+</body>
+</html>

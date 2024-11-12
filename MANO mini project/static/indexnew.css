@@ -1,0 +1,134 @@
+body {
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bff;
+  border-radius: 50%;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: rgb(250, 3, 3);
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.navbar-brand{
+  color: white;
+  border-radius: 35%;
+}
+ .nav-link{
+  color: white;
+  font-size: 25px;
+
+ }
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-search {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 100px;
+}
+
+.jumbotron {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.clock-container {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.btn-don {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sentence {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.Developed {
+  display: flex;
+  align-items: center;
+}
+
+.Developed img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.copyright {
+  text-align: right;
+  font-size: 12px;
+}
+
+

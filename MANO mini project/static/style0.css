@@ -1,0 +1,77 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-search {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.jumbotron {
+  background-color: #4285f4;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.btn-don {
+  background-color: #4285f4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-don:hover {
+  background-color: #2c5aa0;
+}
+
+/* Add more styling as needed */
+s

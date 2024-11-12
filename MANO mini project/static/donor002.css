@@ -1,0 +1,176 @@
+*{
+	color: white;
+	background:transparent(rgb(186, 56, 56));
+}
+
+
+form {
+   
+    padding: 5px;
+    background-color: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: rgb(247, 239, 239);
+    width: 100%;
+    margin-right: 30%;
+    border-right-width: 200px;
+}
+
+.form-box
+{
+	max-width: 100%;
+	border: 1px solid red;
+	margin: 1% auto 0; 
+	margin-top: 50px;
+	border-radius: 30px;
+    width: 80%;
+}
+.radio-btn
+{
+	margin: 0 20px;
+}
+.radio-btn .btn
+{
+	margin: 20px 10px 20px 0;
+    box-shadow: none;
+}
+.radio-btn .btn::after
+{
+	content: '';
+	height: 15px;
+	width: 15px;
+	top: -2px;
+	left: -1px;
+	background-color: #fff;
+	position: relative;
+	display: inline-block;
+	border: 3px solid #fff;
+	visibility: visible;
+	border-radius: 50%;
+}
+.radio-btn .btn:checked::after
+{
+	content: '';
+	background-color: #000;
+	transition: 0,5s;
+}
+.radio-btn span
+{
+	color: #fff;
+	margin-right: 5px;
+	font-size: 12px;
+}
+.king-form
+{
+	padding: 0 20px 20px;
+}
+.booking-form label
+{
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #fff;
+}
+input::placeholder
+{
+	color: #fff !important;
+}
+.input-grp
+{
+	width: 200px;
+    padding-right: 60px;
+	display: inline-block;
+}
+.form-control
+{
+	font-size: 12px!important;
+	border-radius: 0!important;
+	color:  #fff;
+	background: transparent;
+	box-shadow: none!important;
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button
+{
+	-webkit-appearance: none;
+	margin: 0;
+}
+.select-date::-webkit-calender-picker-indicator
+{
+	background: transparent!important;
+}
+.custom-select
+{
+	color: #fff!important;
+	font-size: 12px!important;
+	border: 1px solid #ced4da!important;
+	box-shadow: none!important;
+	border-radius: 0!important;
+	background: transparent!important;
+}
+.custom-select option
+{
+	color: #333;
+}
+.flight
+{
+	width: 100%;
+	padding: 9px 0!important;
+	font-size: 12px!important;
+	border: 1px solid #ced4da!important;
+	background: transparent!important;
+	box-shadow: none!important;
+	border-radius: 0!important;
+}
+.flight:hover
+{
+	background: #fff!important;
+	color: #000!important;
+	transition: 0.5s;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.registerbt {
+
+    background-color: white;
+    top: 10; 
+    size: 75%;
+}
+
+
+
+.btn-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5%;
+    border: blue;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood details</title>
+    <style>
+        .jumbotron {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 6%;
+            width: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            background:red;
+            border-radius:80%;
+            color:white;
+        }
+
+        .jumbotron:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .blood-group-btn {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .blood-group-btn:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .blood-group-btn-selected {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .blood-group-btn-unselected {
+            background-color: #6C757D;
+            color: white;
+        }
+        .navbar-nav{
+          padding-left:30px;
+        }
+        /* Style the navigation bar */
+        .navbar {
+          background-color: white;
+          font-size: 20px;
+        }
+        
+        .navbar-brand {
+          color: white;
+        }
+        
+        .nav-link {
+          color: white;
+        }
+        
+        
+        
+        /* Style the headings */
+        h1 {
+          font-size: 36px;
+          font-weight: bold;
+          color: white;
+        }
+        
+        /* Style the paragraph */
+        p {
+          font-size: 18px;
+        }
+        
+        /* Add margin to navbar items */
+        .nav-item {
+          margin-right: 10px; /* Adjust the value as needed */
+        }
+        
+        /* Add padding to navbar items */
+        .nav-item a {
+          padding: 10px; /* Adjust the value as needed */
+        }
+        /* Style the list */
+        ul {
+          list-style-type: square;
+          margin-left: 20px;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: #222;
+          color: white;
+          text-align: center;
+          padding: 20px;
+        }
+        
+        /* Style the footer links */
+        .footer-copyright a {
+          color: white;
+          text-decoration: none;
+        }
+        
+        /* Center the footer text */
+        .text-center {
+          text-align: center;
+          margin-top:30px;
+        }
+        
+        /* Add some margin at the bottom of the jumbotron */
+        .jumbotron {
+          margin-bottom: 175px;
+          
+          image:url("https://img.freepik.com/free-vector/blood-drop-with-heartbeat-lines-medical-background_1017-25531.jpg?w=740&t=st=1699005978~exp=1699006578~hmac=8870f246b6fb685805a99bac23ec59f68f941d63489830f9bfa668d5de2b6751");
+          image-size:cover;  
+        }
+        .container {
+          
+          width: 100%;
+          padding-right: 15px;
+          background-size:cover;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+          padding-bottom:300px;
+        }
+        /* Style the navigation bar */
+        .navbar {
+          background-color: #932007;
+          font-size: 20px;
+          display: flex; /* Make it horizontal */
+          justify-content: space-between; /* Spread items horizontally */
+          align-items: center; /* Center items vertically */
+          padding: 10px 20px; /* Add some padding for space */
+        }
+        
+        .navbar-brand {
+          color: white;
+          text-decoration: none; /* Remove underlines from links */
+        }
+        
+        .navbar-nav {
+          list-style: none; /* Remove bullet points from the list */
+        }
+        
+        .nav-item {
+          display: inline; /* Make list items appear inline */
+          margin-right: 20px; /* Add space between items */
+        }
+        
+        .nav-link {
+          color: white;
+          text-decoration: none; /* Remove underlines from links */
+        }
+        .list{
+          padding-left:50px;
+        }
+        .text-md-left {
+          text-align: left!important;
+        }
+        .mb-3{
+          text-align:right!important;
+        }
+        .col-md-3 mb-md-0 mb-3{
+          text-align:centre;
+        }
+        .ho,.se,.co,.ab{
+          padding-right:200px;
+          padding-top:45px;
+          padding-bottom:30px;
+          color:white;
+        }
+        .sentance{
+          padding-left:500px;
+          text-align:center;
+          
+          color:white;
+          margin-top:100px;
+        }
+        /* Reset default margin and padding for all elements */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        /* Apply a background image to the body */
+        body {
+          background-image: url("https://media.istockphoto.com/id/860895490/photo/blood-cells.jpg?s=612x612&w=0&k=20&c=y4tYg0frgiqidGlppQnkuaf9PNchjAF0RIGtS5qbU9A=");
+          background-size: cover;
+          background-repeat: no-repeat;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the navigation bar */
+        .navbar {
+          background-color: #932007;
+          font-size: 20px;
+          display: flex; /* Make it horizontal */
+          justify-content: space-between; /* Spread items horizontally */
+          align-items: center; /* Center items vertically */
+          padding: 10px 20px; /* Add some padding for space */
+        }
+        
+        .navbar-brand {
+          color: white;
+          text-decoration: none; /* Remove underlines from links */
+        }
+        
+        .navbar-nav {
+          list-style: none; /* Remove bullet points from the list */
+        }
+        
+        .nav-item {
+          display: inline; /* Make list items appear inline */
+          margin-right: 20px; /* Add space between items */
+        }
+        
+        .nav-link {
+          color: white;
+          text-decoration: none; /* Remove underlines from links */
+        }
+        .sub{
+          border-radius:30%;
+          color:red;
+          background:bule;
+        }
+        .sub::hover{
+          color:red;
+          background:white;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark navbar-full">
+    <a class="navbar-brand" href="/">Blood Bank Monitoring</a>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="/contact">Contact us</a></li>
+      <li class="nav-item"><a href="/register">Register</a></li>
+      <li class="nav-item"><a href="/login">Login</a></li>
+    </ul>
+  </nav>
+    <div class="jumbotron">
+        <h1>Blood details here. </h1>
+        <br>
+        <form action="" method="POST">
+            <div class="form-group">
+                <label>Donor ID :</label>
+                <input type="number" name="d_id" class="form-control" value="">
+            </div>
+            <div class="form-group">
+                <label>Blood Group</label><br>
+                <button type="button" name="blood_group" value="A+" class="blood-group-btn blood-group-btn-selected">A+</button>
+                <button type="button" name="blood_group" value="A-" class="blood-group-btn blood-group-btn-unselected">A-</button>
+                <button type="button" name="blood_group" value="B+" class="blood-group-btn blood-group-btn-unselected">B+</button>
+                <button type="button" name="blood_group" value="B-" class="blood-group-btn blood-group-btn-unselected">B-</button>
+                <button type="button" name="blood_group" value="O+" class="blood-group-btn blood-group-btn-unselected">O+</button>
+                <button type="button" name="blood_group" value="O-" class="blood-group-btn blood-group-btn-unselected">O-</button>
+                <button type="button" name="blood_group" value="AB+" class="blood-group-btn blood-group-btn-unselected">AB+</button>
+                <button type="button" name="blood_group" value="AB-" class="blood-group-btn blood-group-btn-unselected">AB-</button>
+            </div>
+            <div class="form-group">
+                <label>Packets Donated :</label>
+                <input type="number" name="packets" class="form-control" value="">
+            </div>
+            <button class="sub" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <footer class="py-4 bg-dark text-white-50">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase">Developed by</h5>
+            <small>M.MANO & J.NITHISH KUMAR S.SUBASH</small>
+            <br>
+            <small>Register No: 22800072 & 22800078 & 22800096</small>
+            <br>
+            <small>Department of Computer Application( MCA )</small>
+          </div>
+          <!-- Grid column -->
+          
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+           
+                <a class="ho" href="/home">Home</a>
+             
+                <a class="se"href="/donorlogs">donorlogs</a>
+            
+                <a class="ab" href="#!">About</a>
+             
+                <a class="co" href="/contact">Contact Us</a>
+             
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+        <div>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        
+          </form> 
+           <select>
+            <option selected>Select options for custom search</option>
+            <option value="1">search by donor</option>
+            <option value="2">search by blood group</option>
+          </select>
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit" style="background-color:#932007">Search</button> 
+        </div>
+      </div>
+      <!-- Footer Links -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2023 Copyright:
+        <a href="#"> MCA</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+</body>
+</html>

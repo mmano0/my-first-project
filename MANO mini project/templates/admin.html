@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Monitoring System - Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        header {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #343a40;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        nav li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        nav li a:hover {
+            background-color: #555;
+        }
+
+        /* Main content */
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        section h2 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #dc3545;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Blood Bank Monitoring System - Admin Panel</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/notifications">Notifications</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <!-- Add your dashboard content here -->
+        </section>
+
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <!-- Add your notifications content here -->
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2022 Blood Bank Monitoring System
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+
+</html>

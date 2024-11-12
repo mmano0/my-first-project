@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blood Bank Monitoring</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/0012.css">
+   
+  </head>
+  <body>
+    <h2>Donor Form</h2>
+
+<form action="#" method="post">
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="bloodGroup">Blood Group:</label>
+    <input type="text" id="bloodGroup" name="bloodGroup" required>
+
+    <label for="mobileNumber">Mobile Number:</label>
+    <input type="tel" id="mobileNumber" name="mobileNumber" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Have you donated in the last 40 days?</label>
+    <input type="radio" id="yesDonated" name="donationStatus" value="yes" required>
+    <label for="yesDonated">Yes</label>
+    <input type="radio" id="noDonated" name="donationStatus" value="no" required>
+    <label for="noDonated">No</label>
+
+    <label>In the last six months, have you had any of the following?</label>
+    <input type="checkbox" id="tattooing" name="activities[]" value="tattooing">
+    <label for="tattooing">Tattooing</label>
+
+    <input type="checkbox" id="piercing" name="activities[]" value="piercing">
+    <label for="piercing">Piercing</label>
+
+    <input type="checkbox" id="dentalExtraction" name="activities[]" value="dentalExtraction">
+    <label for="dentalExtraction">Dental Extraction</label>
+
+    <br>
+
+    <input type="submit" value="Submit">
+
+</form>
+  
+  <!-- Footer -->
+<footer class="py-4 bg-dark text-white-50">
+  <!-- Footer Links -->
+  <div class="container-fluid ">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+        <!-- Content -->
+        <h5 class="text-uppercase">Developed by</h5>
+        <small>M.MANO & J.NITHISH KUMAR & S. SUBASH</small>
+        <br>
+        <small>Register No: 22800072 & 22800078 & 22800096</small>
+        <br>
+        <small>Department of Computer Application( MCA )</small>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+        <ul class="list-unstyled">
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          <li>
+            <a href="/bloodfrom">Donor Here</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">About</a>
+          </li>
+          <li>
+            <a href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2024 Copyright:
+    <a href="#"> MC22756-MC22756</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+  </body>
+</html>

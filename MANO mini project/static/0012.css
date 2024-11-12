@@ -1,0 +1,461 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin:15px;
+  padding-right: 10%;
+  color: white;
+
+}
+
+.message{
+  color: white;
+
+}
+
+
+.cont{
+  padding-top: 40px;
+  text-align: justify;
+  font-size: 1em;
+}
+
+.fas{
+  color: #5851DB; 
+}
+
+.card ,nav, .footer,tr,video{
+  border-radius: 3px;
+  transition: all 200ms ease-out;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+tr,th,td{
+  border:0.1px solid silver;
+  text-align: center;
+}
+
+.nav-item{
+margin-left: 10px; 
+}
+
+.navbar-brand{
+  text-shadow: 1px 1px 2px red, 0 0 50px black, 0 0 5px white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 1.7em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.brand{
+  text-shadow: 1px 1px 2px red, 0 0 50px black, 0 0 5px white;
+}
+
+.rounded-circle{
+  margin-top: -2.5px;
+}
+
+.card-header{
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.dark-mode {
+background-color: black;
+color: black;
+}
+
+form{
+  padding-top: 20px;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+.footer{
+  padding: 14px;
+}
+
+.alert{
+  border:1px solid #5cb85c;
+  border-left: 5px solid #5cb85c;
+  border-right: 5px solid #5cb85c;
+}
+
+.error{
+  border:1px solid red;
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+}
+
+/* Apply a background image to the body */
+body {
+  background-color:red;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+.row mb-5{
+  margin-right: 20px;
+  width: 70%;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: white;
+    top: 10; 
+    size: 75%;
+}
+
+.search input {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    position: relative;
+    background-color: white;
+    top: 10; 
+    size: 100%;   
+}
+
+.btn-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5%;
+    border: blue;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.navbar {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+  background-image: url('https://e1.pxfuel.com/desktop-wallpaper/85/445/desktop-wallpaper-best-blood-donation-quotes-quotesgram-blood-bank.jpg');
+  color: whitesmoke;
+  position:fixed;
+  right: 0;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  padding-bottom: 0%;
+  margin-bottom: 0;
+  
+}
+
+
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.jumbotron {
+  
+  color: #000;
+
+}
+
+/* Style the jumbotron */
+.jumbotron1 {
+  
+  color: #000;
+  background-color: red;
+  background: transparent(rgba(255, 255, 255, 0.2));
+}
+
+.h1title {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(250, 248, 248);
+  padding-right:60%;
+  margin-left: 0;
+  padding-bottom: 10px;
+
+}
+/* Style the headings */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(250, 248, 248);
+  padding-right:60%;
+  margin-left: 0;
+  padding-bottom: 180px;
+
+}
+
+/* Style the paragraph */
+p {
+  font-size: 18px;
+  color: white;
+}
+
+/* Style the list */
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: red;
+  color: rgb(251, 249, 249);
+  text-align: center;
+ 
+  width: 80%;
+}
+
+/* Style the footer links */
+.footer-copyright a {
+  color: rgb(249, 245, 245);
+  text-decoration: none;
+}
+
+/* Center the footer text */
+.text-center {
+  text-align: center;
+  margin-top:30px;
+}
+
+/* Add some margin at the bottom of the jumbotron */
+
+.container {
+  
+  width: 100%;
+  text-align: center;
+  background-size:cover;
+  padding-right: 0%;
+  margin-right: 0;
+  margin-left: 10%;
+  padding-bottom:200px;
+}
+
+.container1 {
+  background: transparent(rgb(238, 147, 147));
+  width: 80%;
+  text-align: center;
+  background-size:cover;
+  padding-right: 0%;
+  margin-right: 0;
+  margin-left: 10%;
+  padding-bottom:50px;
+}
+
+.navbar-brand {
+  color: white;
+  text-decoration: none; /* Remove underlines from links */
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  top: 5;
+  right: 0;
+  padding: 5%;
+ 
+}
+
+.nav-item {
+  display: inline; /* Make list items appear inline */
+  margin-right: 20px; /* Add space between items */
+}
+
+.nav-link {
+  color: rgb(248, 245, 245);
+  text-decoration: none; 
+  background-color: rgb(245, 7, 7);
+  
+  border-radius: 60%;
+  padding:25px 25px 25px 25px; 
+  font-style: italic;
+  font: bold;
+  font-size: 40px;
+  border-color: rgb(234, 13, 13);
+  margin-top: 0;
+  text-align: center;
+
+}
+.nav-link:hover{
+  color: white;
+  background-color: rgb(255, 0, 0);
+  font-size: 43px;
+  transition: 0.2s;
+}
+.list{
+  padding-left:50px;
+}
+.text-md-left {
+  text-align: left!important;
+}
+.mb-3{
+  text-align:right!important;
+}
+.col-md-3 mb-md-0 mb-3{
+  text-align:centre;
+}
+
+.btn-don{
+  background-color: white;
+  color: red;
+  border-radius: 40%;
+  padding:100px 75px 75px 75px; 
+  font-style: italic;
+  font: bold;
+  font-size: 25px;
+  border-color: white;
+  text-decoration: none; 
+  margin-left: 300px;
+  margin-bottom: 0;
+}
+.btn-don:hover{
+  color: white;
+  background-color: rgb(255, 0, 0);
+  font-size: 30px;
+  transition: 0.5s;
+
+}
+/* Reset default margin and padding for all elements */
+
+
+
+
+/* Style the navigation bar */
+
+.navbar-brand {
+  color: white;
+  text-decoration: none; /* Remove underlines from links */
+}
+
+.navbar-nav {
+  list-style: none;
+}  
+.Developed{
+  margin-top: 0%;
+   margin-left: 300px;
+}
+ .text {
+  margin-right: 25%;
+ }
+img {
+  width: 25%;
+  height: 5%;
+  
+  position: relative;
+  margin-right: 25%;
+}
+.email{
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.container{
+  margin-bottom: 0;
+}
+.logo{
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 150px;
+  border-radius: 30%;
+  height: 100px;
+}
+.raththam{
+  width: 80%;
+  height: fit-content;
+}
+
+
+form {
+    background-color: rgb(245, 86, 86);
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    position: center;
+    margin-left:20px ;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .contactform {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    position: center;
+    margin-left:20px ;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .blood-group-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .blood-group-btn-unselected {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  .btn {box-sizing: 20px;}
+  
+  .sub {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sub:hover {
+    background-color: #27ae60;
+  }
+ 
+  

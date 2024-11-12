@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title class="title"><center>Blood Bank Monitoring</center></title>
+   
+    <link rel="stylesheet" href="static/indexnew.css">
+    <script src="static/New.js"></script>
+    <link rel="stylesheet" href="static/New.css">
+  </head>
+  <style>
+    h1,p{
+      color: rgb(0, 81, 255);
+    }
+    
+    
+    .form-box{
+        background-color: rgb(250, 6, 6);
+        color: rgb(251, 249, 249);
+      }
+      button{
+        width: 100px;
+        height: 50px;
+        border-radius: 50%;
+        color: rgb(250, 10, 10);
+        font-size: medium;
+        font-style: italic;
+        padding-left: 20px;
+        margin-left: 50%;
+      }
+  </style>
+  <body>
+  <nav class="navbar">
+  <b><a class="navbar-brand">Blood Bank Monitoring</a></b>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/notifications">Notification</a>
+      <a class="nav-link" href="/register">Register</a>
+      <a class="nav-link" href="/login">Login</a>
+      
+    </ul>
+  </div>
+</nav>
+  <div class="container">
+  <div >
+    <h1> Contact us <br><br><p>Contact for blood inquiries. Our 24x7 operated system understands emergencies.</p></h1>
+    
+    
+ <div class="form-box">
+  <form class="form2" method="POST" style="margin-right:100px;">
+   <div  class="king-form">  
+    
+    <div class="input-grp">    
+      <label >Blood Group :</label>
+      <select id="bgroup" name="bgroup" required>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+      </select>
+   </div>
+    <div class="input-grp">
+      <label>Number of Packets (units)</label>
+      <input type="number" name="bpackets" class="form-control" placeholder="Blood Packets" value="">
+    </div>
+      <div class="input-grp">
+        <label>Full Name</label>
+        <input type="text" name="fname" class="form-control" placeholder="Full Name" value="">
+      </div>
+
+    <div class="input-grp">
+      <label>Address</label>
+      <input type="text" name="address" class="form-control" placeholder="1234 Main Road" value="">
+    </div>
+    
+    <button style="color:red;" action="/dasboard" type="submit" class="search">submit</button>
+  </div>
+  </form>
+</div>
+</div>
+
+  </div>
+
+ 
+ <!-- Footer -->
+ <footer >
+  <!-- Footer Links -->
+  <div class="container-fluid ">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      
+        <!-- Content -->
+        <h5>Developed by</h5>
+        <small>M.MANO & J.NITHISH KUMAR & S.SUBASH</small>
+        <br>
+        <small>Register No: 22800072 & 22800078 & 22800096</small>
+        <br>
+        <small>Department of Computer Application( MCA )</small>
+     
+      
+      
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2024 Copyright:
+    <a href="#"> MCA</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+  </body>
+</html>

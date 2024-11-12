@@ -1,0 +1,239 @@
+
+.clock-container {
+    font-size: 1em;
+    background-color: white;
+    color: red;
+    
+}
+.form-box {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    width: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .king-form {
+    width: 100%;
+  }
+  
+  .input-grp {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .input-grp label {
+    width: 120px;
+    font-weight: bold;
+  }
+  
+  .input-grp input,
+  .input-grp select {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  
+  .input-grp input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  
+  .input-grp label[for="bloodGroupPositive"] {
+    margin-right: 20px;
+  }
+  .container1{
+    background-color: white;
+    color: red;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .choose {
+    font-style: italic;
+    font-size: 12px;
+  }
+  
+   .wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    min-height: 100%;
+    min-width: 300px;
+    height: max-content;
+    background-color: red;
+    z-index: 1;
+
+}
+
+.wrap2 {
+  display: flex;
+  flex-direction: column;
+  /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+  gap: 20px;
+  width: 100%;
+  min-height: 100%;
+  min-width: 300px;
+  height: max-content;
+  background-color: red;
+  z-index: 1;
+  padding-left: 40px;
+
+}
+
+  .card {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 350px;
+  }
+  
+  .card-header {
+    background-color: #fdfeff;
+    color: #ef0e0e;
+    padding: 10px 15px;
+    font-size: 126px;
+  }
+  .card-header2 {
+    background-color: #fdfeff;
+    color: #ef0e0e;
+    padding: 10px 15px;
+    font-size: 50px;
+  }
+  
+  .card-body {
+    padding: 15px;
+    background-color: blue;
+  }
+  
+  .card-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+
+  .card-body2 {
+    padding: 15px;
+    background-color: blue;
+    width: 100%; 
+  }
+  
+  .card-body2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  
+  .card-body li {
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  /* Specific styling for AB+ and AB- cards */
+  
+  .card-body ul li:nth-child(2) {
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Styling for O- card */
+  
+  .card-body ul li:nth-child(1) {
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .card {
+      width: 100%;
+    }
+  }
+  /*notification*/
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  th, td {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+  }
+  
+  th {
+    background-color: #f7f8f9;
+    font-weight: bold;
+    color: red;
+    border-bottom: 1px solid #000000;
+  }
+  
+  td {
+    vertical-align: middle;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .table-striped tr:nth-child(even) {
+    background-color: #f2f3f4;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    opacity: 0.7;
+  }

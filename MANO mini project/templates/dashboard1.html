@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="static/indexnew.css">
+    <link rel="stylesheet" type="text/css" href="static/New.css">
+    
+</head>
+<body>
+    <nav class="navbar " >
+        <a class="navbar-brand">Blood Bank Monitoring</a>
+            <a class="nav-link" href="/admin">Home</a>
+            <a class="nav-link" href="/layout">Donor Note</a>
+         
+            <a class="nav-link" href="/">LogOut</a>
+      </nav>
+    <div class="container">
+        
+        <div class="jumbotron" >
+            <h1>Welcome to Dashboard :{{ session.username }}</h1>
+            
+    
+            <!-- Display Registration Details -->
+           
+    
+            <!-- Display Donor Details -->
+            <div class="dashboard-container">
+                <h2>Donor Details</h2>
+                <table class="donor-table table-striped">
+                    <tr>
+                        <th>Donor ID</th>
+                        <th>Name</th>
+                        <th>Blood Group</th>
+                        <th>Donor Status</th>
+                        <th>E-mail</th>
+                        <th>Contact Number</th>
+                        <th>Activities</th>
+                    </tr>
+                    {% for detail in details %}
+                        <tr>
+                            <td>{{ detail.donor_id }}</td>
+                            <td>{{ detail.name }}</td>
+                            <td>{{ detail.bloodGroup }}</td>
+                            <td>{{ detail.donationStatus }}</td>
+                            <td>{{ detail.email }}</td>
+                            <td>{{ detail.mobileNumber }}</td>
+                            <td>{{ detail.activities }}</td>
+                           
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        
+    </div>
+<footer class="py-4 bg-dark text-white-50">
+  <!-- Footer Links -->
+  <div class="">
+    <!-- Grid row -->
+    
+      <!-- Grid column -->
+      <div class="Developed">
+        <!-- Content -->
+        
+        <h5 class="text-uppercase">Developed by</h5>
+        <small>M.MANO & S.SUBASH & J.NITHISH KUMAR</small>
+        <br>
+        <small>Register No: 22800072 & 22800096 & 22800078</small>
+        <br>
+        <small>Department of Computer Application( MCA )</small>
+      </div>
+      <!-- Grid column -->
+      
+      
+    
+   
+  <div class="footer-copyright text-center py-3">© 2024 Copyright:
+    <a href="#"> MCA</a></div>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+    
+
+   
+</body>
+</html>
